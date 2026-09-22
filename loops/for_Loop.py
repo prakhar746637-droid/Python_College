@@ -92,6 +92,46 @@ A number whose sum of factors is equal to the number itself
 Ex - 6 = 1, 2, 3 =6
 
 
-'''
-n = int(input("Enter a number :-> "))
+n = int(input("Enter a number: "))
 
+sum = 0
+
+for i in range(1, n):
+    if n % i == 0:
+        sum = sum + i
+
+if sum == n:
+    print(f"Number {n} is a perfect number")
+else:
+    print(f"Number {n} is not a perfect number")
+
+---------------------------------------------------------------------------------------------
+
+Q9 - Check wether the number is prime or not
+
+
+n = int(input("Enter a number: "))
+count = 0
+for i in range(1,n+1,1):
+    if n%i ==0:
+        count +=1
+if count == 2:
+    print(f"Number {n} is prime number")
+else:
+    print(f"Number {n} is not prime number")
+
+-----------------------------------------------------------------------------------------------------
+
+Q10 - Reverse a string without using in build functions
+
+     1st Method
+a = "Prakhar Mishra"
+print(a[::-1])
+
+     2nd method
+
+a = "Prakhar Mishra"
+for i in range(len(a)-1,-1,-1):
+    print(a[i])
+
+'''
