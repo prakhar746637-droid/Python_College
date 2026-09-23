@@ -125,6 +125,7 @@ else:
 Q10 - Reverse a string without using in build functions
 
      1st Method
+
 a = "Prakhar Mishra"
 print(a[::-1])
 
@@ -134,4 +135,35 @@ a = "Prakhar Mishra"
 for i in range(len(a)-1,-1,-1):
     print(a[i])
 
+-----------------------------------------------------------------------------------
+Q11 - Check string is Pallindrome or not
+
+a = 'naman'
+b= ''
+for i in range(len(a)-1,-1,-1):
+    b = b + a[i]
+
+if b ==a:
+    print("Your string are palendrome")
+else:
+    print("Your string are not palendrome")
+
+-----------------------------------------------------------------------------------
+
+Q12. Count all letters digits and special symbol from a given string
+
 '''
+a = "afh@$#%78876"
+char = 0
+dig =0
+spchar = 0
+for i in a:
+    if i.isdigit():
+        dig +=1
+    elif i.isalpha():
+        char += 1
+    else:
+        spchar =+ 1
+print(f"Digits => {dig}")
+print(f"charecter => {char}")
+print(f"special charecter => {spchar}")
